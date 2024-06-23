@@ -251,7 +251,7 @@ int main(int argc, char** argv) {
 
     runStereoCalibration(imageSize, cameraMatrix1, distCoeffs1, imagePoints1, cameraMatrix2, distCoeffs2, imagePoints2, rotation, translation, essential, fundamental, newObjPoints, 7 * SQUARE_SIZE);
 
-    saveCalibration(std::string(argv[3]), cameraMatrix1, distCoeffs1, totalAvgError1, cameraMatrix2, distCoeffs2, totalAvgError2, rotation, translation, essential, fundamental);
+    saveCalibration(std::string(argv[4]), cameraMatrix1, distCoeffs1, totalAvgError1, cameraMatrix2, distCoeffs2, totalAvgError2, rotation, translation, essential, fundamental);
 
     for(;;) {
         Mat frame1;
